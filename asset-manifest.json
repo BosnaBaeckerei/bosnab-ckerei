@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/bosnab-ckerei/static/css/main.2e701647.css",
-    "main.js": "/bosnab-ckerei/static/js/main.7b741251.js",
+    "main.css": "/bosnab-ckerei/static/css/main.37b807d6.css",
+    "main.js": "/bosnab-ckerei/static/js/main.108fa34a.js",
     "index.html": "/bosnab-ckerei/index.html",
-    "main.2e701647.css.map": "/bosnab-ckerei/static/css/main.2e701647.css.map",
-    "main.7b741251.js.map": "/bosnab-ckerei/static/js/main.7b741251.js.map"
+    "main.37b807d6.css.map": "/bosnab-ckerei/static/css/main.37b807d6.css.map",
+    "main.108fa34a.js.map": "/bosnab-ckerei/static/js/main.108fa34a.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e701647.css",
-    "static/js/main.7b741251.js"
+    "static/css/main.37b807d6.css",
+    "static/js/main.108fa34a.js"
   ]
 }
