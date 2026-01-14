@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bosnab-ckerei/static/css/main.2e701647.css",
+    "main.js": "/bosnab-ckerei/static/js/main.7b741251.js",
+    "index.html": "/bosnab-ckerei/index.html",
+    "main.2e701647.css.map": "/bosnab-ckerei/static/css/main.2e701647.css.map",
+    "main.7b741251.js.map": "/bosnab-ckerei/static/js/main.7b741251.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e701647.css",
+    "static/js/main.7b741251.js"
+  ]
+}
