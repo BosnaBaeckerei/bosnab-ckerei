@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import 'aos/dist/aos.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Chewy', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+  /* Default text color (da ne bude čudno bijelo svugdje) */
+  color: rgba(20, 20, 20, 0.92);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer base {
+  :root {
+    /* Vibrant Red Gradient Theme */
+    --primary: 0 65% 43%; /* #731919 */
+    --primary-dark: 0 75% 53%; /* #E52B2B */
+    --primary-foreground: 0 0% 100%;
+    --accent: 45 100% 60%; /* Warm Yellow/Gold */
+    --accent-foreground: 0 0% 10%;
+
+    /* Vibrant Colors */
+    --vibrant-orange: 25 100% 55%;
+    --vibrant-pink: 340 85% 60%;
+    --vibrant-purple: 280 70% 60%;
+    --vibrant-blue: 210 90% 55%;
+
+    /* Background & Surface */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    /* Secondary */
+    --secondary: 35 85% 55%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    /* UI Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 65% 43%;
+
+    /* Destructive */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Radius */
+    --radius: 0.75rem;
+
+    /* Custom Tokens */
+    --gradient-primary: linear-gradient(135deg, #731919 0%, #E52B2B 100%);
+    --gradient-vibrant: linear-gradient(135deg, #E52B2B 0%, #FF6B6B 50%, #FFA07A 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 60%) 0%, hsl(35 100% 50%) 100%);
+    --shadow-elegant: 0 10px 40px -10px hsla(0 65% 43% / 0.4);
+    --shadow-blue-glow: 0 0 40px hsla(210 90% 55% / 0.6), 0 0 80px hsla(210 90% 55% / 0.3);
+    --shadow-card: 0 8px 24px hsla(0 0% 0% / 0.15);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-chewy;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Chewy', cursive;
+  }
+}
+
+/* Logo Blue Shadow */
+.logo-blue-shadow {
+  filter: drop-shadow(0 0 20px rgba(33, 150, 243, 0.8))
+    drop-shadow(0 0 40px rgba(33, 150, 243, 0.5));
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #731919, #E52B2B);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #E52B2B, #FF6B6B);
+}
+
+::selection {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+/* Text glow utilities (koristi na hero naslovima: className="text-glow-rainbow") */
+@layer utilities {
+  .text-glow-rainbow {
+    text-shadow:
+      0 0 6px rgba(255, 107, 107, 0.55),
+      0 0 14px rgba(233, 30, 99, 0.45),
+      0 0 22px rgba(156, 39, 176, 0.35),
+      0 0 30px rgba(33, 150, 243, 0.3);
+  }
+
+  .text-glow-soft {
+    text-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.45),
+      0 0 14px rgba(255, 255, 255, 0.18);
+  }
+}
