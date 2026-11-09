@@ -61,7 +61,7 @@ export const translations = {
         address: 'Adresa',
         phone: 'Telefon',
         hours: 'Radno vrijeme',
-        hoursValue: 'Pon–Ned 08:00–20:00',
+        hoursValue: 'Pon–Ned 08:00–18:00',
       },
       form: {
         title: 'Pošalji poruku',
@@ -126,7 +126,7 @@ export const translations = {
         address: 'Address',
         phone: 'Phone',
         hours: 'Opening Hours',
-        hoursValue: 'Mon–Sun 08:00–20:00',
+        hoursValue: 'Mon–Sun 08:00–18:00',
       },
       form: {
         title: 'Send Message',
@@ -191,7 +191,7 @@ export const translations = {
         address: 'Adresse',
         phone: 'Telefon',
         hours: 'Öffnungszeiten',
-        hoursValue: 'Mo–So 08:00–20:00',
+        hoursValue: 'Mo–So 08:00–18:00',
       },
       form: {
         title: 'Nachricht senden',
